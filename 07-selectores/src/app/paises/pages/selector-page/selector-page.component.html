@@ -1,0 +1,67 @@
+<h1 class="mt-5">Selectores aninados</h1>
+<hr>
+
+<form [formGroup]="miForm" (ngSubmit)="guardar()">
+
+    <div class="row mb-3">
+        <div class="col">
+            <label class="form-control">Continente:</label>
+            <select class="form-control" formControlName="region">
+                <option value=""> -- Selecciona Continente -- </option>
+                <option name="region" 
+                        *ngFor="let region of regiones" 
+                        [value]="region | lowercase"> 
+                        {{region}} 
+                </option>
+            </select>
+        </div>
+    </div>
+
+    <!-- paises -->
+    <div class="row mb-3" *ngIf="paises.length !== 0">
+        <div class="col">
+            <label class="form-control">País:</label>
+            <select class="form-control" formControlName="pais">
+                <option value=""> -- Selecciona País -- </option>
+                <option *ngFor="let pais of paises" 
+                        [value]="pais.alpha3Code"> 
+                        {{ pais.name }} 
+                </option>
+            </select>
+        </div>
+    </div>
+
+        <!-- frontera -->
+        <div class="row mb-3" *ngIf="fronteras.length > 0 ">
+            <div class="col">
+                <label class="form-control">Fronteras:</label>
+                <select class="form-control" formControlName="frontera">
+                    <option value=""> -- Selecciona el pais fronterizo -- </option>
+                    <option *ngFor="let frontera of fronteras" 
+                    [value]="frontera"> 
+                    {{ frontera }} 
+            </option>
+                </select>
+            </div>
+        </div>
+
+    <div class="row" *ngIf="cargando" >
+        <div class="col">
+            <div class="alert alert-primary">
+                Cargando...
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <button class="btn btn-primary float-end" type="submit">Seleccionar</button>
+        </div>
+    </div>
+
+    <h3>Formulario</h3>
+<pre>Valid: {{ miForm.valid }} </pre>
+<pre>{{ miForm.value | json }} </pre>
+    
+</form>
+

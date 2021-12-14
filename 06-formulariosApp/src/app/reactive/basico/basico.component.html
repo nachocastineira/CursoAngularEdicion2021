@@ -1,0 +1,61 @@
+<h2 class="mt-3">Reactivos: Básicos</h2>
+<hr>
+
+<div class="row">
+    <div class="col">
+        <!--le paso al formulario la referencia del formGroup establecido en el componente-->
+        <form (ngSubmit)="guardar()"  autocomplete="off" [formGroup]="miForm" >
+
+            <!-- Campo producto -->
+            <div class="mb-3 row">
+                <label class="col-sm-3 col-form-label" >Producto</label>
+                <div class="col-sm-9">
+                    <!-- el formControlName será la forma de identificar al input -->
+                    <!-- Debe coincidir con el nombre que le puse en el FormGroup del componente -->
+                    <input type="text" 
+                           class="form-control" 
+                           formControlName="producto"                                            
+                           placeholder="Nombre del producto">
+                    <span class="form-text text-danger" *ngIf="campoEsValido('producto')" >
+                          Debe ser de 3 letras
+                    </span>
+                </div>
+            </div>
+
+            <!-- Campo precio -->
+            <div class="mb-3 row">
+                <label class="col-sm-3 col-form-label">Precio</label>
+                <div class="col-sm-9">
+                    <input  type="number" 
+                            class="form-control" 
+                            formControlName="precio"
+                            placeholder="Precio del producto">    
+                    <span class="form-text text-danger" *ngIf="campoEsValido('precio')">
+                            Debe ser 0 o mayor      
+                    </span>       
+                </div>
+            </div>
+
+            <!-- Campo existencias -->
+            <div class="mb-3 row">
+                <label class="col-sm-3 col-form-label">Existencias</label>
+                <div class="col-sm-9">
+                    <input  type="number" class="form-control"  
+                            formControlName="existencias"
+                            placeholder="Existencias del producto">        
+                    <span class="form-text text-danger" *ngIf="campoEsValido('existencias')">
+                         Debe ser 0 o mayor      
+                    </span>            
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <button class="btn btn-primary float-end"
+                             type="submit" >Guardar</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</div>

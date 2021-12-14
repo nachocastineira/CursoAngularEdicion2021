@@ -1,0 +1,75 @@
+Comandos NG: 
+
+- Comando 'ng new nombreProyecto'  ---> me crea un nuevo proyecto angular dentro de la carpeta previamente creada---- 
+- Comando crear componente 'ng g c nombreComponente' (se le puede indicar la subcarpeta donde se generará, la carpeta del componente se crea sola)
+				Si le agrego al comando '--skip-tests' (no se genera el file test) y '-is' (no se genera el css independiente)
+
+- Comando crear modulo 'ng g m nombreModulo'
+	Añadiendo al comando '--flat' el modulo se crea en el nivel superior de la ruta indicada y no se crea una subcarpeta para almacenarlo
+	Otra opcion puede ser 'ng g m nombreModulo --routing' me crea el modulo y tambien un archivo de rutas (se llamará nombreModulo-routing.module.ts)
+
+
+- Comando crear servicio 'ng g s nombreServicio'  --Ej: ng g s gifs/services/gifs --skip-tests
+- Comando crear pipe 'ng g pipe nombrePipe' o 'ng g p nombrePipe'
+- Comando crear guard 'ng g guard nombreGuard' despues se selecciona si se quiere canActivate, canLoad y otros
+- Comando crear directivas
+
+en un formulario se usa parentesis () para emitir o escuchar eventos y se usa corchetes [] para establecer una propiedad a un objeto:
+		<input type="text" placeholder="Edad" [value]="nuevo.edad" (input)="cambiarNombre($event)">
+
+Esto se puede reemplazar usando un ngModel tanto para emitir/escuchar como para establecer propiedades
+		<input type="text" placeholder="Edad" name="edad" [(ngModel)]="nuevo.edad">
+
+
+@Output componente hijo le emite un objeto al componente padre -> Emitir eventos
+@Input Envia componentes del padre al hijo para su utilizacion  
+	Ej:     //El input le indica que esos personajes vendrán del componente padre
+  			@Input() personajes: Personaje[] = []; //Está conectada con la inteface Personaje
+
+
+
+ Generar versión para deployar en produccion (se genera el dist)
+ 	ng build --prod
+
+Netlify es una web que sirve como hosting para una aplicacion angular. Solo se sube las carpetas que se encuentran dentro de la subcarpeta /dist
+
+---- Manejos de Rutas
+Lsa rutas le dicen a Angular que componente debe renderizar/mostrar en base a la url, el archivo de rutes se crea dentro de app/
+
+--- Cargar rutas hijas por LazyLoad, en app-routing.module.ts
+- Antes debemos configurar las rutas en el archivo routing del modulo que creemos
+
+const routes: Routes = [
+  {
+    path: 'template',
+    loadChildren: () => import('./template/template.module').then( m => m.TemplateModule)
+  } ]
+
+
+-----------------------------
+Uso de componentes, librerias CSS icons en forma manual
+- Instalar la libreria o componente por consola
+- Añadir los archivos css indicados en el arrchivo angular.json assets
+
+Algunas liberias como angular tienen un comando que hace todo de una y no es necesario añadir lineas manuales en el angular.json
+
+---
+https://www.npmjs.com/package/json-server Server ligero y facil de levantar para exponer un json de prueba en una url, es util para probar algo o practicar con apis
+
+-------------------------
+para utilizar un dato/id o lo que sea de la ruta (url) puedo hacer uso de los activatedRouter que me permiten almacenar el dato de la ruta (ver ejemplo heroesApp o paisesApp)
+
+------------
+Uso de variables de entorno para desarrollo y produccion (para especificar el host de una api): Los definimos en los archivos environment.ts (ver ejemplo de heroes)
+
+---------
+[(ngModel)]="persona.genero"  - NG Model con caja de bananas, sirve para emitir y escuchar valores 
+
+------------
+Formularios Reactivos: La idea es que el HTML se encuentre lo más simple posible, toda la logica del manejo del formulario las haré en mi componente
+	Uso de ReactiveFormsModule. se importa en el module.ts
+
+---- 
+Hooks: Metodos que se pueden crear en los componentes y que se podran llamar cuando Angular ejecute cierta cosa. Ej: Cuando angular inicializa la pagina, cuando angular detecta cambios, cuando se termina de cargar la pagina, cuando se carga el DOM, entre otros. 
+Uno ya usado es el NgOnInit, otros populare son el AfterViewInit (cuando ya está inicializado el componente), el NgOnChanges (cuando se detectan cambios y se renderiza alguna variable, tambien util cuando usamos Inputs y Outputs) y otro comunmente usado es el NgOnDestroy (util cuando se quiere hacer la limpieza de un componente o pasamos de una ruta a otra)
+		--- Documentacion Angular IO: https://angular.io/guide/lifecycle-hooks

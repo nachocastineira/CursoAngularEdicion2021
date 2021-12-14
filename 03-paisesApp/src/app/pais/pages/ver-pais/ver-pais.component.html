@@ -1,0 +1,37 @@
+<!--en el ngIf hago uso del ng-template, si pais existe muestro el div [es como un rendered]-->
+<div  *ngIf="!pais; else divPais" class="alert alert-info">
+    Espere por favor...
+</div>
+
+<ng-template #divPais>
+    <div class="row">
+        <div class="col-12">
+            <h1>País: {{pais[0].name.common}} </h1>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-4">
+            <h3>Bandera</h3>
+            <img [src]="pais[0].flags.png" class="img-thumbnail">
+        </div>
+        <div class="col">
+            <h3>Información</h3>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <strong>Población </strong> {{pais[0].population | number}}
+                </li>
+                <li class="list-group-item">
+                    <strong>Capital </strong> {{pais[0].capital }}
+                </li>
+                <li class="list-group-item">
+                    <strong>Continente </strong> {{pais[0].region}}
+                </li>
+                <li class="list-group-item">
+                    <strong>Región </strong> {{pais[0].subregion}}
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</ng-template>

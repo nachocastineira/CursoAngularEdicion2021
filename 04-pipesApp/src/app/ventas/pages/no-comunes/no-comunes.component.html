@@ -1,0 +1,66 @@
+<div class="text-layout">
+    <h1>Pipes no tan comunes</h1>
+    <p>Pipes incluidos en Angular - Usualmente en el common module</p>
+</div>
+
+<div class="p-grid">
+    <div class="p-col p-col-6">
+        <p-fieldset legend="i18nSelect Pipe" [toggleable]="true">
+            Saludos {{ nombre }}, es un placer {{ genero | i18nSelect:invitacionMap }} a nuestro evento.
+            <hr>
+            <button pButton (click)="cambiarCliente()" type="button" icon="pi pi-users" 
+                    iconPos="left" label="Cambiar Cliente"></button>
+        </p-fieldset>
+    </div>
+
+    <div class="p-col p-col-6">
+        <p-fieldset legend="i18nPlural Pipe" [toggleable]="true">
+            Actualmente {{ clientes.length | i18nPlural:clientesMap }}
+
+            <hr>
+            <button pButton type="button" (click)="borrarCliente()" class="p-button-danger" 
+                    icon="pi pi-trash" iconPos="left" label="Borrar Cliente"></button>
+        </p-fieldset>       
+    </div>
+
+    <div class="p-col">
+        <p-fieldset legend="Slice Pipe" [toggleable]="true">
+            <b>Original</b>
+            <pre>{{ clientes }} </pre>
+
+            <b>slice:0:3</b>
+            <pre>{{ clientes | slice:0:3 }} </pre>
+
+        </p-fieldset>       
+    </div>
+
+
+    <div class="p-col">
+        <p-fieldset legend="KeyValue Pipe" [toggleable]="true">
+            <ul>
+                <li *ngFor="let item of persona | keyvalue"> {{ item .key }} : {{ item.value }}  </li>
+            </ul>
+        </p-fieldset>       
+    </div>
+
+    <div class="p-col">
+        <p-fieldset legend="Json Pipe" [toggleable]="true">
+            <ul>
+                <li> {{ heroes | json}}  </li>
+            </ul>
+        </p-fieldset>       
+    </div>
+
+    <div class="p-col">
+        <p-fieldset legend="Async Pipe" [toggleable]="true">
+
+            <pre> {{ miObservable | async }} </pre>  
+
+            <pre *ngIf=" !(valorPromesa | async) ">Resolviendo promesa</pre>
+            <pre> {{ valorPromesa | async }} </pre>
+            
+        </p-fieldset>       
+    </div>
+
+
+</div>

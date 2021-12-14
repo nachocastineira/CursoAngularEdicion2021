@@ -1,0 +1,85 @@
+<h2 class="mt-3">Reactivos: Switches</h2>
+<hr>
+
+<form [formGroup]="miForm" (ngSubmit)="guardar()" >
+
+    <!-- Radio -->
+    <div class="row mb-3">
+        <label class="col-sm-3 col-formm-label">Género</label>
+        <div class="col-sm-9">
+
+            <div class="form-check">
+                <input class="form-check-input" 
+                       type="radio" 
+                       value="M"
+                       formControlName="genero"
+                       id="radioMasculino">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Masculino
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" 
+                       type="radio" 
+                       value="F"
+                       formControlName="genero"
+                       id="radioFemenino">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Femenino
+                </label>
+              </div>
+
+        </div>
+    </div>
+
+        <!-- Check switch -->
+        <div class="row mb-3">
+            <label class="col-sm-3 col-formm-label">Notificaciones</label>
+            <div class="col-sm-9">
+                <div class="form-check form-switch">
+                    <input class="form-check-input"                        
+                           formControlName="notificaciones"
+                            type="checkbox" 
+                            id="flexSwitchCheckDefault">
+                    <label class="form-check-label" for="flexSwitchCheckDefault">
+                        Quiero recibir notificaciones</label>
+                  </div>
+            </div>
+        </div>
+
+        <!-- Check -->
+        <div class="row mb-3">
+            <label class="col-sm-3 col-formm-label">Términos y condiciones</label>
+            <div class="col-sm-9">
+                <div class="form-check">
+                    <input class="form-check-input" 
+                    formControlName="terminos"
+                    type="checkbox" id="exampleRadios1" >
+                    <label class="form-check-label" for="exampleRadios1">
+                      Acepto T y C
+                    </label>
+                  </div>               
+            </div>
+        </div>
+
+        <!-- Boton  -->
+        <div class="row">
+            <div class="col">
+                <button class="btn btn-primary float-end"type="submit" >
+                    Guardar</button>
+            </div>
+        </div>
+
+</form>
+
+<h5>Valor del formulario</h5>
+<pre> {{ miForm.value | json }} </pre>
+<br>
+
+<h5>Persona</h5>
+<pre> {{ persona | json }} </pre>
+<br>
+
+<h5>Valid</h5>
+<pre> {{ miForm.valid | json }} </pre>
