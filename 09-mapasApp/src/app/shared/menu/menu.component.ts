@@ -28,7 +28,7 @@ export class MenuComponent {
     },
     {
       ruta: './mapas/marcadores',
-      nombre: 'Marcadorees'
+      nombre: 'Marcadores'
     },
     {
       ruta: './mapas/propiedades',
