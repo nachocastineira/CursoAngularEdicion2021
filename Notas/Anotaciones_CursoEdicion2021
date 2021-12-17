@@ -12,7 +12,8 @@ Comandos NG:
 - Comando crear servicio 'ng g s nombreServicio'  --Ej: ng g s gifs/services/gifs --skip-tests
 - Comando crear pipe 'ng g pipe nombrePipe' o 'ng g p nombrePipe'
 - Comando crear guard 'ng g guard nombreGuard' despues se selecciona si se quiere canActivate, canLoad y otros
-- Comando crear directivas
+- Comando crear directivas 'ng g d nombrePathDirectiva'
+	Si la directiva la quiero usar en otro lado debo exportarla en el module.ts que la contiene, luego importar ese module en el que vaya a usar
 
 en un formulario se usa parentesis () para emitir o escuchar eventos y se usa corchetes [] para establecer una propiedad a un objeto:
 		<input type="text" placeholder="Edad" [value]="nuevo.edad" (input)="cambiarNombre($event)">
@@ -73,3 +74,18 @@ Formularios Reactivos: La idea es que el HTML se encuentre lo más simple posibl
 Hooks: Metodos que se pueden crear en los componentes y que se podran llamar cuando Angular ejecute cierta cosa. Ej: Cuando angular inicializa la pagina, cuando angular detecta cambios, cuando se termina de cargar la pagina, cuando se carga el DOM, entre otros. 
 Uno ya usado es el NgOnInit, otros populare son el AfterViewInit (cuando ya está inicializado el componente), el NgOnChanges (cuando se detectan cambios y se renderiza alguna variable, tambien util cuando usamos Inputs y Outputs) y otro comunmente usado es el NgOnDestroy (util cuando se quiere hacer la limpieza de un componente o pasamos de una ruta a otra)
 		--- Documentacion Angular IO: https://angular.io/guide/lifecycle-hooks
+
+
+----- Seccion 24 - Backend
+
+Uso de Nodemon: Nos permite en desarrollo ver los cambios realizados en tiempo real, solo ejecutamos un comando al principio (nodemon index.js) y este nos actualizará al momento los cambios que ocurran en ese archivo
+
+Detalle de dependencias instaladas
+
+	-bcryptjs: Hace encriptado de datos (hasheo de contraseñas entre otros)
+	-cors: Aceptar peticiones que vengan de otros dominios
+	-doenv: crear variables de entorno mediante paquete
+	-express:
+	-express-validator: Para que los campos tengan la informacion que yo quiero
+	-jsonwebtoken:  Nos permite generar los tokens
+	-mongoose: Nos permite interactuar con mongo de forma sencilla (quiero obtener algun dato, modificar otro, etc)
