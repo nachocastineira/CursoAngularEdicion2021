@@ -89,3 +89,8 @@ Detalle de dependencias instaladas
 	-express-validator: Para que los campos tengan la informacion que yo quiero
 	-jsonwebtoken:  Nos permite generar los tokens
 	-mongoose: Nos permite interactuar con mongo de forma sencilla (quiero obtener algun dato, modificar otro, etc)
+
+----- Uso de Guards
+Sirven para restringir rutas, paginas, componentes a las cuales cierto usuario no puede acceder. 
+Ejemplo: no puede acceder al dashboard si no está logueado. Al momento de generarlos (ver comando al principio) por lo general usamos en CanLoad y el CanActivate, luego una vez generado borramos lo que vamos a utilizar (como los UrlTree, las promesas, entre otros)
+	Se explica en detalle en la seccion 15 - Protección de rutas (se incluyen comentarios en el codigo). Se implementa tambien en la seccion 25
