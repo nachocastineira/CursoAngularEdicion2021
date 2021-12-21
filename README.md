@@ -328,3 +328,37 @@ Esta sección tiene por objetivo enseñarles a usar otra librería de terceros e
 * Re-desplegar a Heroku
 * Revisar logs en producción
 
+## ---- Capturas de aplicaciones realizadas ----
+
+### :bookmark: GifsApp:  
+
+![alt text](https://raw.githubusercontent.com/nachocastineira/CursoAngularEdicion2021/master/Capturas%20Apps/02-GifsApp.png?token=AFBRMPKOZQKKKWYPADUG6YDBZNYSA)
+
+### :bookmark: PaisesApp:  
+
+![alt text](https://raw.githubusercontent.com/nachocastineira/CursoAngularEdicion2021/master/Capturas%20Apps/03-PaisesApp_regiones.png?token=AFBRMPLJEZFBRHYIOOFC6ADBZNZNE)
+![alt text](https://raw.githubusercontent.com/nachocastineira/CursoAngularEdicion2021/master/Capturas%20Apps/03-PaisesApp_porPais.png?token=AFBRMPOWTXMWBMHOKWRNUD3BZNZM4)
+![alt text](https://raw.githubusercontent.com/nachocastineira/CursoAngularEdicion2021/master/Capturas%20Apps/03-PaisesApp_capital.png?token=AFBRMPMDNHRS44QIHHZWHELBZNZMW)
+
+### :bookmark: HeroesApp:  
+
+![alt text](https://raw.githubusercontent.com/nachocastineira/CursoAngularEdicion2021/master/Capturas%20Apps/05-HeroesApp-listado.png?token=AFBRMPIJ4S3D4IT7XIJYK7DBZNZQY)
+![alt text](https://raw.githubusercontent.com/nachocastineira/CursoAngularEdicion2021/master/Capturas%20Apps/05-HeroesApp-agregar.png?token=AFBRMPPO4LPXYTXTALTEZTLBZNZQW)
+
+### :bookmark: HeroesApp:  
+
+![alt text](https://raw.githubusercontent.com/nachocastineira/CursoAngularEdicion2021/master/Capturas%20Apps/06-formulariosApp-template-basicos.png?token=AFBRMPJKDPZKV2QN2OY6LHLBZNZT6)
+![alt text](https://raw.githubusercontent.com/nachocastineira/CursoAngularEdicion2021/master/Capturas%20Apps/06-formulariosApp-template-dinamicos.png?token=AFBRMPII4TO7APBPMH3LG73BZNZUK)
+![alt text](https://raw.githubusercontent.com/nachocastineira/CursoAngularEdicion2021/master/Capturas%20Apps/06-formulariosApp-template-switches.png?token=AFBRMPPH3YAGIT2W6APYAG3BZNZUO)
+
+### :bookmark: MapasApp:  
+![alt text](https://raw.githubusercontent.com/nachocastineira/CursoAngularEdicion2021/master/Capturas%20Apps/09-mapasApp-fullscreen.png?token=AFBRMPOTGX2SPJ4PXNTF6WDBZNZZQ)
+![alt text](https://raw.githubusercontent.com/nachocastineira/CursoAngularEdicion2021/master/Capturas%20Apps/09-mapasApp-zoomRange.png?token=AFBRMPM64I43HUT2HII7MFTBZNZZ4)
+![alt text](https://raw.githubusercontent.com/nachocastineira/CursoAngularEdicion2021/master/Capturas%20Apps/09-mapasApp-marcadores.png?token=AFBRMPOFMJWVALXKZTP3GQTBZNZZU)
+![alt text](https://raw.githubusercontent.com/nachocastineira/CursoAngularEdicion2021/master/Capturas%20Apps/09-mapasApp-propiedades.png?token=AFBRMPP5FZIHMJMML2Q2NLDBZNZ2E)
+
+### :bookmark: AuthApp:  
+![alt text](https://raw.githubusercontent.com/nachocastineira/CursoAngularEdicion2021/master/Capturas%20Apps/12-authApp-registro.png?token=AFBRMPN5NOTIFHPMYHD2E33BZNZ6G)
+![alt text](https://raw.githubusercontent.com/nachocastineira/CursoAngularEdicion2021/master/Capturas%20Apps/12-authApp-login.png?token=AFBRMPPUA6HRQRGMFPTJESLBZNZ6A)
+![alt text](https://raw.githubusercontent.com/nachocastineira/CursoAngularEdicion2021/master/Capturas%20Apps/12-authApp-dashboard.png?token=AFBRMPNKEOFHZW6S6OJ3CRTBZNZ6O)
+
