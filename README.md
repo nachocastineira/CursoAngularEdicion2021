@@ -345,7 +345,7 @@ Esta sección tiene por objetivo enseñarles a usar otra librería de terceros e
 ![alt text](https://raw.githubusercontent.com/nachocastineira/CursoAngularEdicion2021/master/Capturas%20Apps/05-HeroesApp-listado.png?token=AFBRMPIJ4S3D4IT7XIJYK7DBZNZQY)
 ![alt text](https://raw.githubusercontent.com/nachocastineira/CursoAngularEdicion2021/master/Capturas%20Apps/05-HeroesApp-agregar.png?token=AFBRMPPO4LPXYTXTALTEZTLBZNZQW)
 
-### :bookmark: HeroesApp:  
+### :bookmark: FormulariosApp:  
 
 ![alt text](https://raw.githubusercontent.com/nachocastineira/CursoAngularEdicion2021/master/Capturas%20Apps/06-formulariosApp-template-basicos.png?token=AFBRMPJKDPZKV2QN2OY6LHLBZNZT6)
 ![alt text](https://raw.githubusercontent.com/nachocastineira/CursoAngularEdicion2021/master/Capturas%20Apps/06-formulariosApp-template-dinamicos.png?token=AFBRMPII4TO7APBPMH3LG73BZNZUK)
