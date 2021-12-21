@@ -46,7 +46,7 @@ La idea de esta sección no es hacerlos expertos en TypeScript, pero sí irnos a
 
 Después de la sección, podrán ver con otros ojos TypeScript y enfocarnos en todo lo que nos puede brindar, en lugar de las barreras que nos puede poner.
 
-## 4: Introducción a Angular
+### 4: Introducción a Angular
 * Crear proyectos de Angular
 * Explicar cada archivo y directorio de un proyecto
 * Componentes
@@ -59,7 +59,7 @@ Después de la sección, podrán ver con otros ojos TypeScript y enfocarnos en t
 
 Esta es la sección donde empezaremos nuestro camino de Angular.
 
-## 5: Expandiendo nuestra bases
+### 5: Expandiendo nuestra bases
 Una vez sentadas las bases de Angular en la sección anterior, vamos a seguir expandiéndolas aquí, con los siguientes temas:
 
 * Profundizar un poco más en los módulos
@@ -73,7 +73,7 @@ Una vez sentadas las bases de Angular en la sección anterior, vamos a seguir ex
 
 Hay más temas en los videos, pero en forma general esto es lo principal por ahora, tengan presente que aunque todo esto es opcional, la mayor parte de aplicaciones de Angular usan en cierto punto cada uno de los temas que están en esta sección, por lo que hay que asegurarnos de comprender bien cada lección.
 
-## 6: Despliegues rápidos a producción
+### 6: Despliegues rápidos a producción
 Este es un breve listado de los temas fundamentales:
 * Generar build de producción
 * Desplegarlo rápidamente
@@ -81,7 +81,7 @@ Este es un breve listado de los temas fundamentales:
 
 Aquí aprenderemos como generar el build de producción de nuestra aplicación y la desplegaremos en la web rápidamente usando Netlify, el proceso de despliegue en otros servidores es virtualmente el mismo, tomar nuestra carpeta DIST (que contiene la aplicación con archivos HTML, CSS y JS) y desplegarla mediante FTP (preferiblemente sFTP) en el hosting deseado.
 
-## 7: GifsApp - Aplicación para buscar imágenes
+### 7: GifsApp - Aplicación para buscar imágenes
 La sección contendrá nuestra primera aplicación real de Angular, este es un breve listado de los temas fundamentales:
 * Modularización de la aplicación
 * Estructura de la aplicación de media a gran escapa
@@ -96,7 +96,7 @@ La sección contendrá nuestra primera aplicación real de Angular, este es un b
 
 Recuerden que siempre tienen el código fuente al final de la sección para que lo puedan descargar y comparar contra el suyo en caso de que sea necesario.
 
-## 8: SPA - PaisesApp
+### 8: SPA - PaisesApp
 Este es un breve listado de los temas fundamentales:
 * Rutas
 * RouterLink y RouterLinkActive
@@ -111,7 +111,7 @@ Este es un breve listado de los temas fundamentales:
 
 En esta sección daremos los fundamentos de una aplicación SPA (Single Page Application), y luego, las seguiremos haciendo pero mediante carga perezosa (lazyload), esta es otra aplicación real que nos enseñara mucho de cómo funciona Angular y como la información fluye en ella.
 
-# 9: Continuación de PaisesApp - Sugerencias, debounce y más
+##### 9: Continuación de PaisesApp - Sugerencias, debounce y más
 Aquí continuaremos la aplicación de países, pero enfocados en la parte de las sugerencias y auto-completado, este es un breve listado de los temas fundamentales:
 * ngClass y diferentes formas de manipular clases
 * CSS condicionales
@@ -120,7 +120,7 @@ Aquí continuaremos la aplicación de países, pero enfocados en la parte de las
 * Auto-completado en la búsqueda de países
 * No es una sección muy larga, pero dejaremos las bases de cómo funciona un auto-completado en general.
 
-# 10: Pipes de Angular
+### 10: Pipes de Angular
 Esta sección es de mis favoritas del curso, veremos temas sobre Pipes y transformación visual de la data, pero también decidí mezclarlo con otro tema muy solicitado que es PrimeNG (Más adelante hay también una sección con muchos componentes de Angular Material), pero esta sección pretende enseñarles muchas cosas interesantes, aparte de los Pipes de Angular
 
 Este es un breve listado de los temas fundamentales:
@@ -144,7 +144,7 @@ PrimeNG es un paquete de componentes estilizados que contienen funcionalidades b
 
 Recuerden que PrimeNG no es el único, hay muchos pero la mayoría funcionan de formas similares, importando módulos, por eso mi objetivo de entrenarlos bastante bien con el manejo de módulos en todo momento para que nos familiaricemos con esta métodología.
 
-# 11: Pipes Personalizados
+### 11: Pipes Personalizados
 Este es un breve listado de los temas fundamentales:
 * Pipes personalizados
 * Argumentos hacia los Pipes
@@ -152,7 +152,7 @@ Este es un breve listado de los temas fundamentales:
 
 Es una sección pequeña, pero sumamente ilustrativa y necesaria para poder expandir todos los pipes que no existen
 
-# 12: HeroesApp - Rutas hijas y Lazyload
+### 12: HeroesApp - Rutas hijas y Lazyload
 Este es un breve listado de los temas fundamentales:
 * Rutas Hijas
 * Rutas Principales
@@ -163,7 +163,7 @@ Esta sección es fundamental para seguir el curso, ya que de aquí en adelante, 
 
 Comprender el Lazyload no es difícil, y la forma como lo veremos aquí nos ayudará a manejar los dos posibles casos de uso. Uno de ellos es cuando la ruta hija no tiene estilo especial y otra en la que requiere un estilo diferente por cada módulo.
 
-# 13: HeroesApp - Angular Material y Angular Flex-Layout
+### 13: HeroesApp - Angular Material y Angular Flex-Layout
 Este es un breve listado de los temas fundamentales:
 * Angular Material
 * Interfaces y tipado
@@ -179,7 +179,7 @@ Esta sección tiene por objetivo principal aprender a utilizar Angular Material,
 
 En la siguiente sección después de esta, continuaremos la aplicación pero realizaremos un CRUD.
 
-# 14: HeroesApp - CRUD
+### 14: HeroesApp - CRUD
 Este es un breve listado de los temas fundamentales:
 * CRUD
 * Create
@@ -193,7 +193,7 @@ Este es un breve listado de los temas fundamentales:
 
 Esta sección les dará las bases para poder realizar CRUD completos hacia cualquier backend basado en servicios web, mediante comunicación JSON
 
-# 15: Protección de Rutas
+### 15: Protección de Rutas
 Este es un breve listado de los temas fundamentales:
 * Protección de rutas
 * Rutas privadas
@@ -206,7 +206,7 @@ Este es un breve listado de los temas fundamentales:
 
 Esta es una sección muy importante, donde controlaremos de forma básica una autenticación, mucho más adelante en el curso, realizaremos autenticación mediante JWT, pero antes de llegar a eso que son temas de Backend, necesito que comprendamos cómo Angular nos puede servir para proteger nuestras rutas.
 
-# 16 - Formularios - Template y Lazyload
+### 16 - Formularios - Template y Lazyload
 Este es un breve listado de los temas fundamentales:
 * Template driven
 * ViewChild
@@ -219,7 +219,7 @@ Este es un breve listado de los temas fundamentales:
 
 Este es un tema fundamental, pero no es el único, hay varias formas de manejar el estado de un formulario, principalmente tenemos Template driven y Model Driven o formularios reactivos, en esta sección trabajaremos con formularios por template.
 
-# 17 - Formularios Reactivos
+### 17 - Formularios Reactivos
 Este es un breve listado de los temas fundamentales:
 * Formularios Reactivos
 * Lazyload y tareas relacionadas
@@ -233,7 +233,7 @@ Esta sección continua en la siguiente con más temas relacionados a formularios
 
 Muchos me pregunta cuál aproximación prefiero, y son los formularios reactivos, porque siento que tengo mayor control y más fácilmente puedo manipular el formulario, pero los formularios por template sirven mucho cuando son tareas simples o rápidas. Aunque en esos casos, muchas veces prefiero no utilizar formularios por template y simplemente tomo el valor que necesito con referencias locales.
 
-# 18 - Formularios: Validaciones manuales  asincronas
+### 18 - Formularios: Validaciones manuales  asincronas
 
 Este es un breve listado de los temas fundamentales:
 * Validaciones manuales
@@ -247,14 +247,14 @@ Más adelante tendremos una sección de directivas, la cual es un excelente comp
 
 Por ahora me interesa que dominemos el flujo de información y validaciones de los formularios reactivos. Recuerden que todo lo que se haga en formularios Reactivos se puede hacer con los formularios por template, pero prefiero enfocar tiempo y esfuerzo en este tipo de formularios reactivos por la facilidad y control.
 
-# 19 - Formularios Reactivos - Multiples selectores aninados
+### 19 - Formularios Reactivos - Multiples selectores aninados
 Esta sección es una extensión de los formularios reactivos, la cual cubre un tema muy preguntado, que es el manejo de selectores anidados.
 
 Es decir, un selector muestra información, y al cambiar, carga información basado en la primera selección y luego llegamos hasta un tercer nivel.
 
 Es un ejercicio que puede verse complicado, pero vamos paso a paso, llenando select por select y al final les enseño una forma de organizar mejor el código usando RXJS.
 
-# 20 - LifeCycle Hooks
+### 20 - LifeCycle Hooks
 
 Esta sección está enfocada en hablar y explicar todos los pasos del ciclo de vida de un componente (también se aplican a las directivas que veremos después).
 
@@ -262,7 +262,7 @@ No es una sección muy larga, pero mi objetivo es guiarlos en la documentación 
 
 También estos pasos, son conocidos como Hooks, que posiblemente haz escuchado en React, pero funcionan diferente, pero comparten la similitud de que son Métodos (o funciones) que se ejecutan cuando algo sucede en un componente.
 
-# 21: Mapas en Angular
+### 21: Mapas en Angular
 
 Este es un breve listado de los temas fundamentales:
 * Manejo de librerías escritas en JavaScript en TypeScript
@@ -280,7 +280,7 @@ Este es un breve listado de los temas fundamentales:
 
 Aunque el uso de mapas no es algo directamente relacionado con Angular, ya que todo se realiza mediante un objeto de una librería de terceros, en este caso Mapbox, es interesante comprender cómo funcionan esas librerías dentro de Angular y cómo poder tener control de los objetos como si fueran propiedades de nuestras clases.
 
-# Sección 22: Gráficas en Angular
+### Sección 22: Gráficas en Angular
 
 Este es un breve listado de los temas fundamentales:
 * Gráficas dinámicas
@@ -292,13 +292,13 @@ Este es un breve listado de los temas fundamentales:
 
 Esta sección tiene por objetivo enseñarles a usar otra librería de terceros en Angular, para que comprendamos como mostrar de forma visual la data de nuestros componentes.
 
-# 23: Directivas personalizadas de Angular
+### 23: Directivas personalizadas de Angular
 * Directivas personalizadas
 * Directivas estructurales personalizadas
 * Manipulación del elemento del DOM que es host de la directiva
 * Cambio del HTML y estilos del objeto DOM host.
 
-# Sección 24: Auth Backend - MEAN
+### Sección 24: Auth Backend - MEAN
 * Fundamentos de Node
 * REST Services
 * JWT
@@ -310,8 +310,8 @@ Esta sección tiene por objetivo enseñarles a usar otra librería de terceros e
 * Modelos de base de datos
 * Encriptar contraseñas
 
-# 25: AuthApp - MEAN
-* Conectar Angular con nuestro backend
+### 25: AuthApp - MEAN
+* Conectar Angular con nuestro backend#
 * Manejo de JWT
 * Lazyload y rutas
 * Guards
@@ -320,7 +320,7 @@ Esta sección tiene por objetivo enseñarles a usar otra librería de terceros e
 * RXJS y Operadores
 * SweetAlert
 
-# 26: Desplegar backend y frontend a producción
+### 26: Desplegar backend y frontend a producción
 * Generar versión de producción de Angular
 * Desplegar nuestra app de Angular en nuestro backend de Node
 * Desplegar el backend + frontend en Heroku
